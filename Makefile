@@ -1,13 +1,13 @@
-lint:  ;@echo "Linting ${PROJECT}....."; \
+lint:  ;@echo "Linting....."; \
 	./node_modules/.bin/eslint . --fix
 
-run: ;@echo "Starting ${PROJECT}....."; \
+run: ;@echo "Starting....."; \
 	npm start
 
-install: ;@echo "Installing ${PROJECT}....."; \
+install: ;@echo "Installing....."; \
 	npm install
 
-build: ;@echo "Installing ${PROJECT}....."; \
+build: ;@echo "Installing....."; \
 	npm run build
 
 clean : ;
