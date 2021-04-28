@@ -13,12 +13,12 @@ const CarouselItem = ({ title, description, image }) => (
       <Grid item className="carrousel-background">
         <img src={image} alt="Banner background" />
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={6} className="carrousel-effect">
         <img src={BannerEffect} alt="Banner effect" />
       </Grid>
     </Grid>
     <Grid container item justify="center" className="carousel-texts">
-      <Grid container item xs={8} justify="center" direction="column">
+      <Grid container item xs={9} justify="center" direction="column">
         <Grid item xs={5} className="carousel-title">
           <span>{title}</span>
         </Grid>
