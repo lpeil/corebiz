@@ -1,0 +1,21 @@
+.navbar {
+  padding: 16px 0;
+}
+
+.navbar-logo {
+  height: 41px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.MuiButton-label {
+  text-transform: none;
+}
+
+.MuiButton-root.my-account {
+  color: #7A7A7A;
+}
+
+.MuiButton-root.my-account .MuiButton-startIcon {
+  color: #000;
+}
