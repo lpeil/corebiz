@@ -75,3 +75,17 @@
 .custom-dots .slick-active button {
   background-color: #F8475F;
 }
+
+.arrow {
+  position: absolute!important;
+
+  top: 50%;
+}
+
+.arrow.prev {
+  left: -75px;
+}
+
+.arrow.next {
+  right: -75px;
+}

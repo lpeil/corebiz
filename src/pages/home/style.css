@@ -1,0 +1,11 @@
+.slick-initialized .slick-slide {
+  display: flex;
+}
+
+.products-slider .slick-slide {
+  justify-content: center;
+}
+
+.products-slider .slick-slide:focus {
+  outline: none;
+}
