@@ -1,0 +1,108 @@
+.product {
+  position: relative;
+
+  width: 216px;
+  margin-bottom: 25px;
+}
+
+.product .MuiCardMedia-root {
+  width: 216px;
+  height: 200px;
+}
+
+.product-container {
+  transition: .2s;
+}
+
+.product-off {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+
+  width: 82px;
+  height: 72px;
+  top: 0;
+  right: 0;
+}
+
+.product-off::before {
+  content: "";
+  position: absolute;
+  
+  width: 0;
+  height: 0;
+  right: 0;
+  border: 0 solid transparent;
+  border-bottom-width: 75px;
+  border-top-width: 0px;
+  border-right: 82px solid #F8475F;
+}
+
+.product-off span {
+  margin: 11px 8px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 22px;
+
+  z-index: 1;
+}
+
+.product:hover .product-container {
+  background-color: #E6E8EA;
+}
+
+.product-name {
+  color: #7A7A7A;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 600;
+
+  margin-top: 8px;
+}
+
+.product-list {
+  color: #7A7A7A;
+  font-size: 12px;
+  text-align: center;
+  line-height: 16px;
+
+  height: 16px;
+}
+
+.product-price {
+  color: #000;
+  font-size: 18px;
+  text-align: center;
+  line-height: 25px;
+  font-weight: 700;
+}
+
+.product-installments {
+  color: #7A7A7A;
+  font-size: 11px;
+  text-align: center;
+  line-height: 15px;
+
+  height: 15px;
+}
+
+.MuiButtonBase-root.product-buy {
+  margin: 8px 0;
+
+  color: #FFFFFF;
+  background-color: #000000;
+
+  opacity: 0;
+  transition: .2s;
+}
+
+.MuiButtonBase-root.product-buy:hover {
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+.product:hover .MuiButtonBase-root.product-buy {
+  opacity: 1;
+}
