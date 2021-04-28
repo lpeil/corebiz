@@ -1,13 +1,6 @@
-export function newCartProduct(product) {
+export function setProducts(products) {
   return {
-    type: '@cart/NEW_PRODUCT',
-    product,
-  };
-}
-
-export function removeCartProduct(product) {
-  return {
-    type: '@cart/REMOVE_PRODUCT',
-    product,
+    type: '@products/SET_PRODUCTS',
+    products,
   };
 }

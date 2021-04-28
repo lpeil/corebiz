@@ -14,7 +14,7 @@ export default function cart(state = initialState, action) {
       });
     case '@cart/REMOVE_PRODUCT':
       return produce(state, (draft) => {
-        draft.products.filter((product) => product.id === action.product.id);
+        draft.products.filter((product) => product === action.product.productId);
 
         localStorage.setItem('cartProducts', JSON.stringify(draft.products));
       });
