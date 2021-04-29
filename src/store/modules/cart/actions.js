@@ -1,13 +1,27 @@
-export function newCartProduct(product) {
+export function changeDrawerCart(drawer) {
   return {
-    type: '@cart/NEW_PRODUCT',
-    product,
+    type: '@cart/CHANGE_DRAWER',
+    drawer,
   };
 }
 
-export function removeCartProduct(product) {
+export function addCartProduct(productId) {
+  return {
+    type: '@cart/NEW_PRODUCT',
+    productId,
+  };
+}
+
+export function removeCartProduct(productId) {
   return {
     type: '@cart/REMOVE_PRODUCT',
-    product,
+    productId,
+  };
+}
+
+export function decreaseCartProduct(productId) {
+  return {
+    type: '@cart/DECREASE_PRODUCT',
+    productId,
   };
 }

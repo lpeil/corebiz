@@ -10,22 +10,16 @@ import {
   Star, StarBorder,
 } from '@material-ui/icons';
 
-import { newCartProduct } from '../../store/modules/cart/actions';
+import { addCartProduct } from '../../store/modules/cart/actions';
+import toMoney from '../../utils/toMoney';
 
 import './style.css';
 
 const Product = ({ product }) => {
   const dispatch = useDispatch();
 
-  const toMoney = (value) => {
-    if (!value) return '';
-
-    const valueString = value.toString();
-    return `R$ ${valueString.slice(0, -2)},${valueString.slice(-2)}`;
-  };
-
   const addProductToCart = () => {
-    dispatch(newCartProduct(product.productId));
+    dispatch(addCartProduct(product.productId));
   };
 
   return (
