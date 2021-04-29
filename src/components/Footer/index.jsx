@@ -25,6 +25,7 @@ const Footer = () => (
         <h1>Localização</h1>
         <hr />
         <p>Avenida Andrômeda, 2000. Bloco 6 e 8</p>
+        <p>Alphaville SP</p>
         <p>brasil@corebiz.ag SP</p>
         <p>+55 11 3090 1039</p>
       </Grid>
