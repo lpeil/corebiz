@@ -13,3 +13,26 @@
 .products-slider .slick-slide:focus {
   outline: none;
 }
+
+.products-title {
+  position: relative;
+  margin: 25px 0;
+
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 27px;
+}
+
+.products-title::after {
+  content: "";
+  position: absolute;
+  
+  width: 0;
+  height: 0;
+  left: 0;
+  bottom: -4px;
+  border: 0 solid #C0C0C0;
+  border-bottom-width: 4px;
+  border-top-width: 0px;
+  border-left-width: 65px;
+}
