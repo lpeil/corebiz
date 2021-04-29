@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { Grid } from '@material-ui/core';
 import { Carousel } from '../../components';
 import HomeProducts from './components/products';
+import HomeNewsletter from './components/newsletter';
 
 import { apiGetProducts } from '../../services/products';
 import { setProducts } from '../../store/modules/products/actions';
@@ -30,6 +31,9 @@ const HomePage = () => {
           <Grid item xs={12}>
             <HomeProducts />
           </Grid>
+        </Grid>
+        <Grid item container xs={12}>
+          <HomeNewsletter />
         </Grid>
       </Grid>
     </div>

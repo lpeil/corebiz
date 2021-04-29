@@ -36,3 +36,83 @@
   border-top-width: 0px;
   border-left-width: 65px;
 }
+
+.newsletter {
+  background-color: #F2F2F2;
+
+  padding: 24px 0;
+}
+
+.newsletter .MuiButtonBase-root {
+  height: 48px;
+  width: 140px;
+  max-width: 95vw;
+
+  color: #FFFFFF;
+  font-weight: 700;
+  text-transform: none;
+  background-color: #000000;
+}
+
+.newsletter .MuiButtonBase-root:hover {
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+.newsletter .MuiOutlinedInput-root {
+  height: 48px;
+  width: 280px;
+  max-width: 95vw;
+  margin-right: 8px;
+  
+  outline: none;
+  font-size: 12px;
+  background-color: #FFFFFF;
+}
+
+.newsletter .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: transparent;
+}
+
+.newsletter .MuiOutlinedInput-root:hover:not(.Mui-error) fieldset,
+.newsletter .Mui-focused:not(.Mui-error) fieldset {
+  border-color: #BDBDBD!important;
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+  width: 100%;
+}
+
+.newsletter-title {
+  margin: 0 0 16px;
+
+  color: #333333;
+  font-size: 22px;
+  text-align: center;
+  line-height: 22px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .newsletter .MuiOutlinedInput-root {
+    margin: 15px 0 7px;
+  }
+
+  .newsletter-title {
+    margin: 0 0 4px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter .MuiButtonBase-root {
+    width: 280px;
+  }
+}
