@@ -14,7 +14,7 @@ import {
   Menu as MenuIcon,
 } from '@material-ui/icons';
 
-import CorebizLogo from '../../assets/logo.svg';
+import CorebizLogo from '../../assets/corebiz-black.png';
 
 import './style.css';
 
@@ -59,7 +59,7 @@ const Navbar = () => {
             <MenuIcon style={{ fontSize: 30 }} />
           </Grid>
         </Hidden>
-        <Grid item xs={3}>
+        <Grid container item xs={6} md={3} justify="center">
           <Link to="/" replace>
             <img src={CorebizLogo} alt="Corebiz Logo" className="navbar-logo" />
           </Link>

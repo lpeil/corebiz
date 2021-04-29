@@ -9,3 +9,22 @@ html, body {
 .MuiButtonBase-root {
   font-family: 'Nunito', sans-serif!important;
 }
+
+#content {
+  min-height: 100vh;
+  margin-bottom: -215px;
+}
+
+.push {
+  height: 215px;
+}
+
+@media screen and (max-width: 960px) {
+  #content {
+    margin-bottom: -390px;
+  }
+
+  .push {
+    height: 390px;
+  }
+}
