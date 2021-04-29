@@ -107,6 +107,10 @@
   opacity: 1;
 }
 
+.MuiSvgIcon-colorSecondary {
+  color: #F8475F!important;
+}
+
 @media (max-width: 960px) {
   .MuiButtonBase-root.product-buy {
     width: 216px;
