@@ -42,11 +42,15 @@ const SearchPage = () => {
         justify="space-around"
         direction="row"
       >
-        {searchedProducts.map((product) => (
-          <Grid key={product.productId}>
-            <Product product={product} />
-          </Grid>
-        ))}
+        {
+          searchedProducts.length
+            ? searchedProducts.map((product) => (
+              <Grid key={product.productId}>
+                <Product product={product} />
+              </Grid>
+            ))
+            : <h1>Produto não encontrado</h1>
+        }
       </Grid>
     </Grid>
   );
