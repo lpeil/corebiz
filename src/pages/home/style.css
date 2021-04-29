@@ -81,11 +81,14 @@
 
 .newsletter-form {
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: row;
 
   width: 100%;
+}
+
+.newsletter-form .MuiFormHelperText-contained {
+  margin: 0;
 }
 
 .newsletter-title {
