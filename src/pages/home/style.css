@@ -126,7 +126,13 @@
   font-family: 'Lato', sans-serif;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
+  .products-slider {
+    margin-bottom: 45px;
+  }
+}
+
+@media (max-width: 960px) {
   .newsletter .MuiOutlinedInput-root {
     margin: 15px 0 7px;
   }

@@ -106,3 +106,46 @@
 .product:hover .MuiButtonBase-root.product-buy {
   opacity: 1;
 }
+
+@media (max-width: 960px) {
+  .MuiButtonBase-root.product-buy {
+    width: 216px;
+
+    opacity: 1;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .product:hover .product-container {
+    background-color: transparent;
+  }
+}
+
+@media (max-width: 600px) {
+  .product,
+  .MuiButtonBase-root.product-buy,
+  .product .MuiCardMedia-root {
+    width: 132px;
+  }
+
+  .product .MuiCardMedia-root {
+    height: 122px;
+  }
+
+  .product-off {
+    width: 50px;
+    height: 45px;
+  }
+
+  .product-off::before {
+    border-bottom-width: 50px;
+    border-right-width: 45px;
+  }
+
+  .product-off span {
+    margin: 8px 5px;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 14px;
+  }
+}

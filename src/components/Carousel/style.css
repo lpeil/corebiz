@@ -55,6 +55,10 @@
   width: 100%;
 }
 
+.custom-dots.mobile {
+  bottom: -20px;
+}
+
 .custom-dots li {
   list-style-type: none;
 }
