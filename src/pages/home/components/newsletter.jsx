@@ -12,7 +12,7 @@ const HomeNewsletter = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [errors, setErrors] = useState({});
-  const [subscribed, setSubscribed] = useState(true);
+  const [subscribed, setSubscribed] = useState(false);
 
   const handleSubmit = async (event) => {
     event.preventDefault();

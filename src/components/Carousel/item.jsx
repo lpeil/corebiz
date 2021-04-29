@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Grid } from '@material-ui/core';
+import { Grid, Hidden } from '@material-ui/core';
 
 import './style.css';
 
@@ -9,24 +9,25 @@ import BannerEffect from '../../assets/carousel/bannerEffect.png';
 
 const CarouselItem = ({ title, description, image }) => (
   <Grid container className="carousel-item">
-    <Grid container item direction="row-reverse">
-      <Grid item className="carrousel-background">
+    <div className="carousel-images">
+      <div className="carousel-background">
         <img src={image} alt="Banner background" />
-      </Grid>
-      <Grid item xs={6} className="carrousel-effect">
-        <img src={BannerEffect} alt="Banner effect" />
-      </Grid>
-    </Grid>
-    <Grid container item justify="center" className="carousel-texts">
-      <Grid container item xs={9} justify="center" direction="column">
-        <Grid item xs={5} className="carousel-title">
-          <span>{title}</span>
-        </Grid>
-        <Grid item xs={4} className="carousel-description">
-          <span>{description}</span>
-        </Grid>
-      </Grid>
-    </Grid>
+      </div>
+      <Hidden smDown>
+        <div className="carousel-effect">
+          <img src={BannerEffect} alt="Banner effect" />
+        </div>
+      </Hidden>
+      <Hidden mdUp>
+        <div className="carousel-dark-effect" />
+      </Hidden>
+    </div>
+    <div className="carousel-texts-container">
+      <div className="carousel-texts">
+        <span className="carousel-title">{title}</span>
+        <span className="carousel-description">{description}</span>
+      </div>
+    </div>
   </Grid>
 );
 

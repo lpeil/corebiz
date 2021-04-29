@@ -24,7 +24,7 @@ const HomePage = () => {
     <div>
       <Carousel />
       <Grid container justify="center">
-        <Grid item container xs={9} direction="column">
+        <Grid item container xs={11} md={9} direction="column">
           <Grid item>
             <h1 className="products-title">Mais Vendidos</h1>
           </Grid>

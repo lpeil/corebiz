@@ -33,7 +33,7 @@ const HomeProducts = () => {
           slidesToScroll: 2,
           arrows: false,
           dots: true,
-          appendDots: (dots) => <Dots dots={dots} mobile />
+          appendDots: (dots) => <Dots dots={dots} mobile="products" />
         }
       }
     ]
