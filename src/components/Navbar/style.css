@@ -21,6 +21,13 @@
   color: #000;
 }
 
+.navbar .MuiInput-underline,
+.navbar .MuiInput-underline::before,
+.navbar .MuiInput-underline::after,
+.navbar .MuiInput-underline.MuiFocused {
+  border-color: #000000!important;
+}
+
 @media (max-width: 960px) {
   .navbar-logo {
     height: 25px;
