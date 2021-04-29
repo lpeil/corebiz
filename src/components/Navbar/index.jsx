@@ -1,11 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { useSelector, useDispatch } from 'react-redux';
 import { Debounce } from 'react-throttle';
 import { useHistory, Link } from 'react-router-dom';
 
 import {
-  Grid, Input, InputAdornment, Button, Badge, Hidden, Drawer,
+  Grid,
+  Input,
+  InputAdornment,
+  Button,
+  Badge,
+  Hidden,
+  Drawer,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
 } from '@material-ui/core';
 import {
   Search as SearchIcon,
@@ -44,6 +54,7 @@ SearchInput.propTypes = {
 
 const Navbar = () => {
   const dispatch = useDispatch();
+  const [leftMenu, setLeftMenu] = useState(false);
   const cartStore = useSelector((state) => state.cart);
   const productsStore = useSelector((state) => state.products);
   const history = useHistory();
@@ -61,12 +72,14 @@ const Navbar = () => {
   const toggleDrawer = (drawer, open) => () => {
     if (drawer === 'cart') {
       dispatch(changeDrawerCart(open));
+    } else {
+      setLeftMenu(open);
     }
   };
 
   const MenuCart = () => (
     <div
-      className="menu-cart"
+      className="side-menu menu-cart"
       role="presentation"
       onKeyDown={toggleDrawer('cart', false)}
     >
@@ -135,13 +148,33 @@ const Navbar = () => {
     </div>
   );
 
+  const LeftMenu = () => (
+    <div
+      className="side-menu"
+      role="presentation"
+      onKeyDown={toggleDrawer('left', false)}
+    >
+      <List>
+        <ListItem button key="Minha Conta">
+          <ListItemIcon>
+            <PersonIcon />
+          </ListItemIcon>
+          <ListItemText primary="Minha Conta" />
+        </ListItem>
+      </List>
+    </div>
+  );
+
   return (
     <>
       <Grid container justify="center" className="navbar">
         <Grid container item xs={11} md={10} justify="space-between" alignItems="center">
           <Hidden mdUp>
             <Grid item xs={2}>
-              <MenuIcon style={{ fontSize: 30 }} />
+              <MenuIcon
+                style={{ fontSize: 30 }}
+                onClick={toggleDrawer('left', true)}
+              />
             </Grid>
           </Hidden>
           <Grid container item xs={6} md={3} className="navbar-logo-container">
@@ -185,6 +218,15 @@ const Navbar = () => {
           onClose={toggleDrawer('cart', false)}
         >
           <MenuCart />
+        </Drawer>
+      </React.Fragment>
+      <React.Fragment key="left">
+        <Drawer
+          anchor="left"
+          open={leftMenu}
+          onClose={toggleDrawer('left', false)}
+        >
+          <LeftMenu />
         </Drawer>
       </React.Fragment>
     </>
