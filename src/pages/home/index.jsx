@@ -25,7 +25,7 @@ const HomePage = () => {
       <Grid container justify="center">
         <Grid item container xs={9} direction="column">
           <Grid item>
-            <h1>Mais Vendidos</h1>
+            <h1 className="products-title">Mais Vendidos</h1>
           </Grid>
           <Grid item xs={12}>
             <HomeProducts />
