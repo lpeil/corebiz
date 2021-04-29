@@ -29,6 +29,6 @@ Remove node_modules folder;
 
 ## Links
 
-[Figma](https://www.figma.com/file/awhTJyKgrjEOqPHUrrFBv0/Corebiz---Frontend-Challenge)
-[APIs](https://documenter.getpostman.com/view/1811817/Szzj8yAq?version=latest)
+[Figma](https://www.figma.com/file/awhTJyKgrjEOqPHUrrFBv0/Corebiz---Frontend-Challenge) \
+[APIs](https://documenter.getpostman.com/view/1811817/Szzj8yAq?version=latest) \
 [URL](https://peil.dev/corebiz)
