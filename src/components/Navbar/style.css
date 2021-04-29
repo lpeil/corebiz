@@ -19,3 +19,9 @@
 .MuiButton-root.my-account .MuiButton-startIcon {
   color: #000;
 }
+
+@media (max-width: 960px) {
+  .navbar-logo {
+    height: 25px;
+  }
+}
