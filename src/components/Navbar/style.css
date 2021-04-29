@@ -68,6 +68,14 @@
   border-bottom: 1px solid #CECECE;
 }
 
+.menu-cart-content {
+  width: 90%;
+}
+
+.menu-product-list {
+  width: 100%;
+}
+
 .menu-product-list .menu-product:last-child {
   border: none;
 }

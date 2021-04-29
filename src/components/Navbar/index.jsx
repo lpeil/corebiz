@@ -87,7 +87,7 @@ const Navbar = () => {
       {
         cartStore?.products.length
           ? (
-            <div>
+            <div className="menu-cart-content">
               <div className="menu-product-list">
                 {cartStore?.products?.map((cart) => {
                   const product = productsStore.filter((p) => p.productId === cart.id)?.[0];
