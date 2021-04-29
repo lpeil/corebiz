@@ -24,7 +24,7 @@ const HomeProducts = () => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
-        }
+        },
       },
       {
         breakpoint: 960,
@@ -33,10 +33,10 @@ const HomeProducts = () => {
           slidesToScroll: 2,
           arrows: false,
           dots: true,
-          appendDots: (dots) => <Dots dots={dots} mobile="products" />
-        }
-      }
-    ]
+          appendDots: (dots) => <Dots dots={dots} mobile="products" />,
+        },
+      },
+    ],
   };
 
   return (
